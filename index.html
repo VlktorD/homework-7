@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Breeds</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Патека до стилскиот фајл -->
+</head>
+<body>
+    <!-- Хедер дел -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#breeds">Breeds</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero секција -->
+    <section id="hero">
+        <div class="hero-overlay">
+            <h1>Explore Different Cat Breeds</h1>
+            <p>Learn more about various cat breeds and their unique characteristics.</p>
+        </div>
+    </section>
+
+    <!-- Breeds секција -->
+    <section id="breeds">
+        <h2>Popular Cat Breeds</h2>
+        <div class="content-container">
+            <div class="content-box">
+                <img src="images/siamese.jpg" alt="Siamese Cat">
+                <h3>Siamese</h3>
+                <p>Siamese cats have sleek bodies and beautiful blue eyes.</p>
+            </div>
+            <div class="content-box">
+                <img src="images/maine_coon.jpg" alt="Maine Coon Cat">
+                <h3>Maine Coon</h3>
+                <p>Maine Coon cats are large and have bushy tails and tufted ears.</p>
+            </div>
+            <div class="content-box">
+                <img src="images/persian.jpg" alt="Persian Cat">
+                <h3>Persian</h3>
+                <p>Persians are known for their calm personalities and luxurious fur.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact форма -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer секција -->
+    <footer>
+        <p>&copy; 2024 Cat Breeds | Follow us on 
+            <a href="#">Facebook</a> 
+            <a href="#">Instagram</a> 
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+</body>
+</html>

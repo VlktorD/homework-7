@@ -1,0 +1,172 @@
+/* Основен стил за целата страница */
+body {
+    font-family: Arial, sans-serif; /* Избор на фонт */
+    margin: 0; /* Без маргини околу страницата */
+    padding: 0; /* Без пополнување околу страницата */
+    background-color: #f4f4f4; /* Светла позадинска боја */
+    color: #333; /* Темна боја за текстот */
+}
+
+/* Хедер стил */
+header {
+    background-color: #003366; /* Сина боја за хедер */
+    padding: 10px 0; /* Простор околу хедерот */
+}
+
+header nav ul {
+    list-style: none; /* Без точки на листата */
+    display: flex; /* Редна структура */
+    justify-content: center; /* Центрирање на линковите */
+    padding: 0; /* Без пополнување на листата */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Простор помеѓу секој линк */
+}
+
+header nav ul li a {
+    color: white; /* Бел текст за линковите */
+    text-decoration: none; /* Без поддршка за линковите */
+    font-size: 16px; /* Големина на текстот */
+    font-weight: bold; /* Подебел текст */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline; /* Подвлечена линија при ховер */
+}
+
+/* Hero секција */
+#hero {
+    background-image: url('images/hero-background.jpg'); /* Позадинска слика */
+    background-size: cover; /* Покријте целата секција */
+    background-position: center; /* Центрирање на сликата */
+    height: 400px; /* Висина на секцијата */
+    display: flex; /* Поставете го содржината по центар */
+    justify-content: center; /* Центрирање по хоризонтала */
+    align-items: center; /* Центрирање по вертикала */
+    text-align: center; /* Центрирање на текстот */
+    color: white; /* Бел текст */
+}
+
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозирна позадина за контраст */
+    padding: 20px; /* Простор околу текстот */
+    border-radius: 5px; /* Заоблени агли */
+}
+
+#hero h1 {
+    font-size: 28px; /* Големина на насловот */
+    margin-bottom: 10px; /* Простор под насловот */
+}
+
+#hero p {
+    font-size: 18px; /* Големина на поднасловот */
+}
+
+/* Breeds секција */
+#breeds {
+    padding: 20px; /* Простор околу содржината */
+    text-align: center; /* Центрирање на текстот */
+}
+
+#breeds h2 {
+    font-size: 24px; /* Големина на насловот */
+    margin-bottom: 20px; /* Простор под насловот */
+}
+
+.content-container {
+    display: flex; /* Поставување на елементите во ред */
+    flex-wrap: wrap; /* Овозможување преместување на елементите на следна линија */
+    justify-content: space-around; /* Простор помеѓу елементите */
+    gap: 20px; /* Простор помеѓу картите */
+}
+
+.content-box {
+    width: 300px; /* Ширина на секоја карта */
+    background: white; /* Бел позадински боја за картите */
+    border-radius: 5px; /* Заоблени агли */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Мала сенка за ефект */
+    padding: 10px; /* Простор околу содржината */
+}
+
+.content-box img {
+    width: 100%; /* Ширина на сликите */
+    border-radius: 5px; /* Заоблени агли на сликите */
+}
+
+.content-box h3 {
+    margin: 10px 0; /* Простор околу текстот */
+    font-size: 20px; /* Големина на поднасловот */
+}
+
+.content-box p {
+    font-size: 14px; /* Големина на текстот */
+    color: #555; /* Поголема сива боја за текстот */
+}
+
+/* Contact форма */
+#contact {
+    background-color: #fff; /* Бел позадински боја */
+    padding: 20px; /* Простор околу содржината */
+    text-align: center; /* Центрирање на текстот */
+}
+
+#contact h2 {
+    font-size: 24px; /* Големина на насловот */
+    margin-bottom: 10px; /* Простор под насловот */
+}
+
+form {
+    display: flex; /* Поставување на елементите во ред */
+    flex-direction: column; /* Колона за елементите */
+    align-items: center; /* Центрирање на полето */
+    max-width: 400px; /* Максимална ширина на формата */
+    margin: 0 auto; /* Центрирање на формата */
+}
+
+form label {
+    font-size: 14px; /* Големина на текстот */
+    margin-bottom: 5px; /* Простор под текстот */
+    align-self: flex-start; /* Поставете ги текстовите на почеток */
+}
+
+form input, form textarea {
+    width: 100%; /* Ширина на полето */
+    padding: 8px; /* Простор околу текстот */
+    margin-bottom: 10px; /* Простор помеѓу полињата */
+    font-size: 14px; /* Големина на текстот */
+    border: 1px solid #ccc; /* Раб на полето */
+    border-radius: 4px; /* Заоблени агли */
+}
+
+form button {
+    padding: 10px 20px; /* Простор околу копчето */
+    font-size: 14px; /* Големина на текстот */
+    background-color: #003366; /* Сина боја за копчето */
+    color: white; /* Бел текст */
+    border: none; /* Без рабови */
+    border-radius: 4px; /* Заоблени агли */
+    cursor: pointer; /* Курсор при ховер */
+}
+
+form button:hover {
+    background-color: #001f3d; /* Потемна сина боја при ховер */
+}
+
+/* Footer секција */
+footer {
+    background-color: #003366; /* Сина боја за footer */
+    color: white; /* Бел текст */
+    text-align: center; /* Центрирање на текстот */
+    padding: 10px; /* Простор околу текстот */
+}
+
+footer a {
+    color: white; /* Бел текст за линковите */
+    text-decoration: none; /* Без поддршка за линковите */
+    margin: 0 5px; /* Простор помеѓу линковите */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Подвлечена линија при ховер */
+}
