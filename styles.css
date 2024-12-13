@@ -1,11 +1,17 @@
 /* Основен стил за целата страница */
 body {
-    font-family: Arial, sans-serif; /* Избор на фонт */
+    font-family: 'Delius-Regular', sans-serif; /* Избор на фонт */
     margin: 0; /* Без маргини околу страницата */
     padding: 0; /* Без пополнување околу страницата */
     background-color: #f4f4f4; /* Светла позадинска боја */
     color: #333; /* Темна боја за текстот */
 }
+
+@font-face {
+    font-family: 'Delius-Regular';
+    src: url('fonts/Delius-Regular.ttf') format('truetype');
+  }
+  
 
 /* Хедер стил */
 header {
